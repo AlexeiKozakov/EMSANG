@@ -1,0 +1,41 @@
+
+
+
+<!--    <tbody>-->
+<!--    <a class="nav-link  btn btn-outline-success nav-link  " routerLink="/addEvent">AddEvents </a>-->
+
+<!--    <tr *ngFor="let event of events">-->
+<!--    <td>{{event.id}}</td>-->
+<!--    <td>{{event.name}}</td>-->
+<!--    <td>{{event.price}}</td>-->
+<!--    <td></td>-->
+<!--    <td></td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+
+<div class="container">
+  <h2>Event Table</h2>
+  <a class="nav-link  btn btn-outline-success nav-link  " routerLink="/addEvent">AddEvents </a>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>EventType</th>
+      <th>Date</th>
+      <th>ParticipantLimit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let event of events">
+      <td>{{ event.id }}</td>
+      <td>{{ event.name }}</td>
+      <td>{{ event.price }}</td>
+      <td>{{ event.eventType }}</td>
+      <td>{{ event.date }}</td>
+      <td>{{ event.participantLimit }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
